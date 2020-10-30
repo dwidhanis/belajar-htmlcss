@@ -2,6 +2,11 @@ table {
   border-collapse: collapse;
   border: 1px solid black;
   width: 100%;
+  margin-bottom: 50px;
+}
+
+table:last-child {
+  margin-bottom: 0px;
 }
 
 th,
@@ -12,6 +17,14 @@ td {
 
 th {
   background: cadetblue;
+}
+
+.kanan {
+  text-align: right;
+  font-weight: bold;
+}
+.tengah {
+  text-align: center;
 }
 
 .no {
