@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komponen | Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/form.css" type="text/css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <img src="images/logo.png" alt="#" />
+      </header>
+
+      <!--Bagian Form-->
+      <section class="content">
+        <form action="proses-login.php" method="POST">
+          <label class="form-style">
+            Nama Lengkap
+            <input class="input" type="text" placeholder="Nama Lengkap" />
+          </label>
+
+          <label class="form-style">
+            Telepon
+            <input class="input" type="number" placeholder="Telepon" />
+          </label>
+
+          <label class="form-style">
+            Email
+            <input class="input" type="email" placeholder="Email" />
+          </label>
+
+          <label class="form-style">
+            Password
+            <input class="input" type="password" placeholder="Password" />
+          </label>
+
+          <!--membuat Textarea-->
+          <label class="form-style">
+            Alamat
+            <textarea class="input" name="" id=""></textarea>
+          </label>
+
+          <!--membuat checkbox-->
+          <fieldset class="form-style">
+            <legend>Hoby</legend>
+            <label> <input type="checkbox" value="Coding" />Coding </label>
+
+            <label> <input type="checkbox" value="Menulis" />Menulis </label>
+
+            <label> <input type="checkbox" value="Basket" />Basket </label>
+          </fieldset>
+
+          <!--membuat radio-->
+          <fieldset class="form-style">
+            <legend>Pekerjaan</legend>
+            <label>
+              <input type="radio" value="Direktur" name="pekerjaan" />Direktur
+            </label>
+
+            <label>
+              <input type="radio" value="Karyawan" name="pekerjaan" />Karyawan
+            </label>
+
+            <label>
+              <input type="radio" value="Belum Bekerja" name="pekerjaan" />Belum
+              Bekerja
+            </label>
+          </fieldset>
+
+          <!--membuat selectbox-->
+          <label class="form-style">
+            Ukuran Sepatu
+            <select name="" class="input">
+              <option value="39">Ukuran 39</option>
+              <option value="40">Ukuran 40</option>
+              <option value="41">Ukuran 41</option>
+              <option value="42">Ukuran 42</option>
+            </select>
+          </label>
+
+          <!--membuat Datalist-->
+          <label class="form-style">
+            Warna Favorit
+            <input list="warna" class="input" />
+            <datalist id="warna">
+              <option value="K">Kuning</option>
+              <option value="M">Merah</option>
+              <option value="B">Biru</option>
+              <option value="H">Hijau</option>
+              <option value="HT">Hijau Tosca</option>
+            </datalist>
+          </label>
+
+          <!--membuat button submit-->
+          <input type="submit" value="Kirim" />
+        </form>
+      </section>
+
+      <!--Bagian Menu/Navbar-->
+      <nav class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="form.html" class="active">Form</a>
+        <a href="#">Tabel</a>
+        <a href="#">Tentang</a>
+      </nav>
+
+      <!--Footer-->
+      <footer>Footer</footer>
+    </section>
+  </body>
+</html>
